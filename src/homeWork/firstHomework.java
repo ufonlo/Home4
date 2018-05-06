@@ -1,13 +1,15 @@
 package homeWork;
+import java.util.Scanner;
 
 public class firstHomework {
 	public static void main (String []args) {
-		int x = 10;
-
-	      while( x < 20 ) {
-	         System.out.print("value of x : " + x );
-	         x++;
-	         System.out.print("\n");
-	}
+		System.out.print("Enter day of week");
+		Scanner weekDay = new Scanner(System.in);
+		int number = weekDay.nextInt();
+		if (number <= 5 && number >0) {
+			System.out.print("weekday");
+		}else {
+			System.out.print("weekend");
+		}
 	}
 }
